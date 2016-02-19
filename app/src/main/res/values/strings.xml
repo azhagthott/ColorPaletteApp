@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Color Palette</string>
+    <string name="action_settings">Settings</string>
+
+
+
+    <!-- Deep Purple -->
+    <string name="deep_purple">Deep purple</string>
+    <string name="title_activity_scrolling">#Color selected</string>
+
+    <!-- Dummy Color -->
+    <string name="dummy_color">#00FF00</string>
+
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_main">Color Palette</string>
+    <string name="title_activity_detail_scrolling">#ColorSelected</string>
+    <string name="large_text">aafsdfasdf</string>
+
+
+
+
+
+</resources>
