@@ -8,10 +8,31 @@
     tools:context="dev.android.cl.colorpalette.activity.DetailScrollingActivity"
     tools:showIn="@layout/activity_detail_scrolling">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="&lt;resources&gt;
+    &lt;!-- inherit from the material theme --&gt;
+        &lt;style name=&quot;AppTheme&quot; parent=&quot;android:Theme.Material&quot;&gt;
+            &lt;!-- Main theme colors --&gt;
+            &lt;!--   your app branding color for the app bar --&gt;
+            &lt;item name=&quot;android:colorPrimary&quot;&gt;@color/primary&lt;/item&gt;
+            &lt;!--   darker variant for the status bar and contextual app bars --&gt;
+            &lt;item name=&quot;android:colorPrimaryDark&quot;&gt;@color/primary_dark&lt;/item&gt;
+            &lt;!--   theme UI controls like checkboxes and text fields --&gt;
+            &lt;item name=&quot;android:colorAccent&quot;&gt;@color/accent&lt;/item&gt;
+        &lt;/style&gt;
+    &lt;/resources&gt;
+
+            " />
+
+
+    </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

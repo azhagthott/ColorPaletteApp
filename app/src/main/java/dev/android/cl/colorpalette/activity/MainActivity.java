@@ -1,19 +1,24 @@
 package dev.android.cl.colorpalette.activity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Gravity;
+import android.view.View;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
 import dev.android.cl.colorpalette.R;
+import dev.android.cl.colorpalette.color.MaterialColor;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,11 +29,11 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         final TableLayout tableLayout = (TableLayout) findViewById(R.id.tableLayout);
+        tableLayout.setBackgroundColor(getResources().getColor(R.color.grey_900));
 
         float colorBoxHeight = getApplication().getResources().getDimension(R.dimen.color_box_height);
         float colorBoxWidth = getApplication().getResources().getDimension(R.dimen.color_box_width);
         float colorBoxPadding = getApplication().getResources().getDimension(R.dimen.color_box_padding);
-
 
         int intColorBoxHeight = Math.round(colorBoxHeight);
         int intColorBoxWidth = Math.round(colorBoxWidth);
@@ -52,6 +57,24 @@ public class MainActivity extends AppCompatActivity {
                 textColorHex.setPadding(intColorBoxPadding, intColorBoxPadding, intColorBoxPadding, intColorBoxPadding);
                 textColorHex.setGravity(Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL);
                 textColorHex.setBackgroundColor(Color.parseColor(allColors[intColorPosition]));
+
+                final MaterialColor materialColor = new MaterialColor();
+                materialColor.setName(allColorName[intColorPosition]);
+
+                textColorHex.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        textColorHex.setTranslationZ(-20f);
+                        textColorHex.setBackgroundColor(getResources().getColor(R.color.grey_900));
+
+                        Log.d(LOG_TAG, "onClick: " + textColorHex.getTranslationZ());
+
+                        Intent i = new Intent(MainActivity.this, DetailScrollingActivity.class);
+                        i.putExtra("COLOR_NAME", materialColor.getName());
+                        //startActivity(i);
+                    }
+                });
 
                 tableRow.addView(textColorHex);
                 intColorPosition++;
