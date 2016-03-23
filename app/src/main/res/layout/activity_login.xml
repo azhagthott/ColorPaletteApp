@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".activity.LoginActivity">
 
     <LinearLayout
@@ -131,14 +132,13 @@
         android:layout_gravity="center"
         android:background="@drawable/gradient_splash_screen"
         android:clickable="false"
-        android:elevation="2dp"
         android:gravity="left|bottom"
-        android:text="@string/app_name"
-        android:textColor="@color/grey_300"
-        android:textSize="72sp"
         android:paddingBottom="24dp"
         android:paddingLeft="24dp"
         android:paddingRight="24dp"
+        android:text="@string/app_name"
+        android:textColor="@color/grey_300"
+        android:textSize="72sp"
         android:typeface="monospace" />
 
 </RelativeLayout>

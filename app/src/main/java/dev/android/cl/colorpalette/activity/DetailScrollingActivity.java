@@ -1,42 +1,44 @@
 package dev.android.cl.colorpalette.activity;
 
-import android.graphics.Color;
 import android.os.Bundle;
+import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 
 import dev.android.cl.colorpalette.R;
+import dev.android.cl.colorpalette.color.MaterialColor;
 
 public class DetailScrollingActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = DetailScrollingActivity.class.getSimpleName();
-    private CollapsingToolbarLayout toolbar_layout;
+    private CollapsingToolbarLayout toolbarLayout;
     private Toolbar toolbar;
+    private AppBarLayout appBarLayout;
+    private String colorGroupName;
+    private int i;
+    private MaterialColor materialColor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_scrolling);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar_layout = (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
+        toolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
+        appBarLayout = (AppBarLayout) findViewById(R.id.app_bar);
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
-            String colorName = extras.getString("COLOR_NAME");
-            Log.d(LOG_TAG, "onCreate: " + colorName);
 
-            toolbar.setBackgroundColor(Color.parseColor(colorName));
-            toolbar_layout.setBackgroundColor(Color.parseColor(colorName));
-            toolbar_layout.setTitle(colorName);
+            String colorName = extras.getString("SELECTED_COLOR_NAME");
+            colorGroupName = extras.getString("GROUP_COLOR_NAME");
+            int colorPosition = extras.getInt("COLOR_POSITION");
 
+            toolbarLayout.setTitle(colorName);
         }
-
-
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);

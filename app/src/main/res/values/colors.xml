@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!--
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    -->
+
+    <color name="colorPrimary">#424242</color>
+    <color name="colorPrimaryDark">#212121</color>
     <color name="colorAccent">#FF4081</color>
 
     <!-- Black -->
@@ -28,6 +35,38 @@
     <color name="red_A200">#FF5252</color>
     <color name="red_A400">#FF1744</color>
     <color name="red_A700">#D50000</color>
+    <string-array name="material_colors_red_names">
+        <item>@color/red_50</item>
+        <item>@color/red_100</item>
+        <item>@color/red_200</item>
+        <item>@color/red_300</item>
+        <item>@color/red_400</item>
+        <item>@color/red_500</item>
+        <item>@color/red_600</item>
+        <item>@color/red_700</item>
+        <item>@color/red_800</item>
+        <item>@color/red_900</item>
+        <item>@color/red_A100</item>
+        <item>@color/red_A200</item>
+        <item>@color/red_A400</item>
+        <item>@color/red_A700</item>
+    </string-array>
+    <string-array name="material_colors_red_values">
+        <item>#FFEBEE</item>
+        <item>#FFCDD2</item>
+        <item>#EF9A9A</item>
+        <item>#E57373</item>
+        <item>#EF5350</item>
+        <item>#F44336</item>
+        <item>#E53935</item>
+        <item>#D32F2F</item>
+        <item>#C62828</item>
+        <item>#B71C1C</item>
+        <item>#FF8A80</item>
+        <item>#FF5252</item>
+        <item>#FF1744</item>
+        <item>#D50000</item>
+    </string-array>
 
     <!-- Pink -->
     <color name="pink_50">#FCE4EC</color>
@@ -44,6 +83,38 @@
     <color name="pink_A200">#FF4081</color>
     <color name="pink_A400">#F50057</color>
     <color name="pink_A700">#C51162</color>
+    <string-array name="material_colors_pink_names">
+        <item>@color/pink_50</item>
+        <item>@color/pink_100</item>
+        <item>@color/pink_200</item>
+        <item>@color/pink_300</item>
+        <item>@color/pink_400</item>
+        <item>@color/pink_500</item>
+        <item>@color/pink_600</item>
+        <item>@color/pink_700</item>
+        <item>@color/pink_800</item>
+        <item>@color/pink_900</item>
+        <item>@color/pink_A100</item>
+        <item>@color/pink_A200</item>
+        <item>@color/pink_A400</item>
+        <item>@color/pink_A700</item>
+    </string-array>
+    <string-array name="material_colors_pink_values">
+        <item>#FCE4EC</item>
+        <item>#F8BBD0</item>
+        <item>#F48FB1</item>
+        <item>#F06292</item>
+        <item>#EC407A</item>
+        <item>#E91E63</item>
+        <item>#D81B60</item>
+        <item>#C2185B</item>
+        <item>#AD1457</item>
+        <item>#880E4F</item>
+        <item>#FF80AB</item>
+        <item>#FF4081</item>
+        <item>#F50057</item>
+        <item>#C51162</item>
+    </string-array>
 
     <!-- Purple -->
     <color name="purple_50">#F3E5F5</color>
@@ -60,6 +131,38 @@
     <color name="purple_A200">#E040FB</color>
     <color name="purple_A400">#D500F9</color>
     <color name="purple_A700">#AA00FF</color>
+    <string-array name="material_colors_purple_names">
+        <item>@color/purple_50</item>
+        <item>@color/purple_100</item>
+        <item>@color/purple_200</item>
+        <item>@color/purple_300</item>
+        <item>@color/purple_400</item>
+        <item>@color/purple_500</item>
+        <item>@color/purple_600</item>
+        <item>@color/purple_700</item>
+        <item>@color/purple_800</item>
+        <item>@color/purple_900</item>
+        <item>@color/purple_A100</item>
+        <item>@color/purple_A200</item>
+        <item>@color/purple_A400</item>
+        <item>@color/purple_A700</item>
+    </string-array>
+    <string-array name="material_colors_purple_values">
+        <item>#F3E5F5</item>
+        <item>#E1BEE7</item>
+        <item>#CE93D8</item>
+        <item>#BA68C8</item>
+        <item>#AB47BC</item>
+        <item>#9C27B0</item>
+        <item>#8E24AA</item>
+        <item>#7B1FA2</item>
+        <item>#6A1B9A</item>
+        <item>#4A148C</item>
+        <item>#EA80FC</item>
+        <item>#E040FB</item>
+        <item>#D500F9</item>
+        <item>#AA00FF</item>
+    </string-array>
 
     <!-- Deep Purple -->
     <color name="deep_purple_50">#EDE7F6</color>
@@ -76,6 +179,38 @@
     <color name="deep_purple_A200">#7C4DFF</color>
     <color name="deep_purple_A400">#651FFF</color>
     <color name="deep_purple_A700">#6200EA</color>
+    <string-array name="material_colors_deep_purple_names">
+        <item>@color/deep_purple_50</item>
+        <item>@color/deep_purple_100</item>
+        <item>@color/deep_purple_200</item>
+        <item>@color/deep_purple_300</item>
+        <item>@color/deep_purple_400</item>
+        <item>@color/deep_purple_500</item>
+        <item>@color/deep_purple_600</item>
+        <item>@color/deep_purple_700</item>
+        <item>@color/deep_purple_800</item>
+        <item>@color/deep_purple_900</item>
+        <item>@color/deep_purple_A100</item>
+        <item>@color/deep_purple_A200</item>
+        <item>@color/deep_purple_A400</item>
+        <item>@color/deep_purple_A700</item>
+    </string-array>
+    <string-array name="material_colors_deep_purple_values">
+        <item>#EDE7F6</item>
+        <item>#D1C4E9</item>
+        <item>#B39DDB</item>
+        <item>#9575CD</item>
+        <item>#7E57C2</item>
+        <item>#673AB7</item>
+        <item>#5E35B1</item>
+        <item>#512DA8</item>
+        <item>#4527A0</item>
+        <item>#311B92</item>
+        <item>#B388FF</item>
+        <item>#7C4DFF</item>
+        <item>#651FFF</item>
+        <item>#6200EA</item>
+    </string-array>
 
     <!-- Indigo -->
     <color name="indigo_50">#E8EAF6</color>
@@ -92,6 +227,38 @@
     <color name="indigo_A200">#536DFE</color>
     <color name="indigo_A400">#3D5AFE</color>
     <color name="indigo_A700">#304FFE</color>
+    <string-array name="material_colors_indigo_names">
+        <item>@color/indigo_50</item>
+        <item>@color/indigo_100</item>
+        <item>@color/indigo_200</item>
+        <item>@color/indigo_300</item>
+        <item>@color/indigo_400</item>
+        <item>@color/indigo_500</item>
+        <item>@color/indigo_600</item>
+        <item>@color/indigo_700</item>
+        <item>@color/indigo_800</item>
+        <item>@color/indigo_900</item>
+        <item>@color/indigo_A100</item>
+        <item>@color/indigo_A200</item>
+        <item>@color/indigo_A400</item>
+        <item>@color/indigo_A700</item>
+    </string-array>
+    <string-array name="material_colors_indigo_values">
+        <item>#E8EAF6</item>
+        <item>#C5CAE9</item>
+        <item>#9FA8DA</item>
+        <item>#7986CB</item>
+        <item>#5C6BC0</item>
+        <item>#3F51B5</item>
+        <item>#3949AB</item>
+        <item>#303F9F</item>
+        <item>#283593</item>
+        <item>#1A237E</item>
+        <item>#8C9EFF</item>
+        <item>#536DFE</item>
+        <item>#3D5AFE</item>
+        <item>#304FFE</item>
+    </string-array>
 
     <!-- Blue -->
     <color name="blue_50">#E3F2FD</color>
@@ -108,6 +275,38 @@
     <color name="blue_A200">#448AFF</color>
     <color name="blue_A400">#2979FF</color>
     <color name="blue_A700">#2962FF</color>
+    <string-array name="material_colors_blue_names">
+        <item>@color/blue_50</item>
+        <item>@color/blue_100</item>
+        <item>@color/blue_200</item>
+        <item>@color/blue_300</item>
+        <item>@color/blue_400</item>
+        <item>@color/blue_500</item>
+        <item>@color/blue_600</item>
+        <item>@color/blue_700</item>
+        <item>@color/blue_800</item>
+        <item>@color/blue_900</item>
+        <item>@color/blue_A100</item>
+        <item>@color/blue_A200</item>
+        <item>@color/blue_A400</item>
+        <item>@color/blue_A700</item>
+    </string-array>
+    <string-array name="material_colors_blue_values">
+        <item>#E3F2FD</item>
+        <item>#BBDEFB</item>
+        <item>#90CAF9</item>
+        <item>#64B5F6</item>
+        <item>#42A5F5</item>
+        <item>#2196F3</item>
+        <item>#1E88E5</item>
+        <item>#1976D2</item>
+        <item>#1565C0</item>
+        <item>#0D47A1</item>
+        <item>#82B1FF</item>
+        <item>#448AFF</item>
+        <item>#2979FF</item>
+        <item>#2962FF</item>
+    </string-array>
 
     <!-- Light Blue -->
     <color name="light_blue_50">#E1F5FE</color>
@@ -124,6 +323,38 @@
     <color name="light_blue_A200">#40C4FF</color>
     <color name="light_blue_A400">#00B0FF</color>
     <color name="light_blue_A700">#0091EA</color>
+    <string-array name="material_colors_light_blue_names">
+        <item>@color/light_blue_50</item>
+        <item>@color/light_blue_100</item>
+        <item>@color/light_blue_200</item>
+        <item>@color/light_blue_300</item>
+        <item>@color/light_blue_400</item>
+        <item>@color/light_blue_500</item>
+        <item>@color/light_blue_600</item>
+        <item>@color/light_blue_700</item>
+        <item>@color/light_blue_800</item>
+        <item>@color/light_blue_900</item>
+        <item>@color/light_blue_A100</item>
+        <item>@color/light_blue_A200</item>
+        <item>@color/light_blue_A400</item>
+        <item>@color/light_blue_A700</item>
+    </string-array>
+    <string-array name="material_colors_light_blue_values">
+        <item>#E1F5FE</item>
+        <item>#B3E5FC</item>
+        <item>#81D4FA</item>
+        <item>#4FC3F7</item>
+        <item>#29B6F6</item>
+        <item>#03A9F4</item>
+        <item>#039BE5</item>
+        <item>#0288D1</item>
+        <item>#0277BD</item>
+        <item>#01579B</item>
+        <item>#80D8FF</item>
+        <item>#40C4FF</item>
+        <item>#00B0FF</item>
+        <item>#0091EA</item>
+    </string-array>
 
     <!-- Cyan -->
     <color name="cyan_50">#E0F7FA</color>
@@ -140,6 +371,38 @@
     <color name="cyan_A200">#18FFFF</color>
     <color name="cyan_A400">#00E5FF</color>
     <color name="cyan_A700">#00B8D4</color>
+    <string-array name="material_colors_cyan_names">
+        <item>@color/cyan_50</item>
+        <item>@color/cyan_100</item>
+        <item>@color/cyan_200</item>
+        <item>@color/cyan_300</item>
+        <item>@color/cyan_400</item>
+        <item>@color/cyan_500</item>
+        <item>@color/cyan_600</item>
+        <item>@color/cyan_700</item>
+        <item>@color/cyan_800</item>
+        <item>@color/cyan_900</item>
+        <item>@color/cyan_A100</item>
+        <item>@color/cyan_A200</item>
+        <item>@color/cyan_A400</item>
+        <item>@color/cyan_A700</item>
+    </string-array>
+    <string-array name="material_colors_cyan_values">
+        <item>#E0F7FA</item>
+        <item>#B2EBF2</item>
+        <item>#80DEEA</item>
+        <item>#4DD0E1</item>
+        <item>#26C6DA</item>
+        <item>#00BCD4</item>
+        <item>#00ACC1</item>
+        <item>#0097A7</item>
+        <item>#00838F</item>
+        <item>#006064</item>
+        <item>#84FFFF</item>
+        <item>#18FFFF</item>
+        <item>#00E5FF</item>
+        <item>#00B8D4</item>
+    </string-array>
 
     <!-- Teal -->
     <color name="teal_50">#E0F2F1</color>
@@ -156,6 +419,38 @@
     <color name="teal_A200">#64FFDA</color>
     <color name="teal_A400">#1DE9B6</color>
     <color name="teal_A700">#00BFA5</color>
+    <string-array name="material_colors_teal_names">
+        <item>@color/teal_50</item>
+        <item>@color/teal_100</item>
+        <item>@color/teal_200</item>
+        <item>@color/teal_300</item>
+        <item>@color/teal_400</item>
+        <item>@color/teal_500</item>
+        <item>@color/teal_600</item>
+        <item>@color/teal_700</item>
+        <item>@color/teal_800</item>
+        <item>@color/teal_900</item>
+        <item>@color/teal_A100</item>
+        <item>@color/teal_A200</item>
+        <item>@color/teal_A400</item>
+        <item>@color/teal_A700</item>
+    </string-array>
+    <string-array name="material_colors_teal_values">
+        <item>#E0F2F1</item>
+        <item>#B2DFDB</item>
+        <item>#80CBC4</item>
+        <item>#4DB6AC</item>
+        <item>#26A69A</item>
+        <item>#009688</item>
+        <item>#00897B</item>
+        <item>#00796B</item>
+        <item>#00695C</item>
+        <item>#004D40</item>
+        <item>#A7FFEB</item>
+        <item>#64FFDA</item>
+        <item>#1DE9B6</item>
+        <item>#00BFA5</item>
+    </string-array>
 
     <!-- Green -->
     <color name="green_50">#E8F5E9</color>
@@ -172,6 +467,38 @@
     <color name="green_A200">#69F0AE</color>
     <color name="green_A400">#00E676</color>
     <color name="green_A700">#00C853</color>
+    <string-array name="material_colors_green_names">
+        <item>@color/green_50</item>
+        <item>@color/green_100</item>
+        <item>@color/green_200</item>
+        <item>@color/green_300</item>
+        <item>@color/green_400</item>
+        <item>@color/green_500</item>
+        <item>@color/green_600</item>
+        <item>@color/green_700</item>
+        <item>@color/green_800</item>
+        <item>@color/green_900</item>
+        <item>@color/green_A100</item>
+        <item>@color/green_A200</item>
+        <item>@color/green_A400</item>
+        <item>@color/green_A700</item>
+    </string-array>
+    <string-array name="material_colors_green_values">
+        <item>#E8F5E9</item>
+        <item>#C8E6C9</item>
+        <item>#A5D6A7</item>
+        <item>#81C784</item>
+        <item>#66BB6A</item>
+        <item>#4CAF50</item>
+        <item>#43A047</item>
+        <item>#388E3C</item>
+        <item>#2E7D32</item>
+        <item>#1B5E20</item>
+        <item>#B9F6CA</item>
+        <item>#69F0AE</item>
+        <item>#00E676</item>
+        <item>#00C853</item>
+    </string-array>
 
     <!-- Light Green -->
     <color name="light_green_50">#F1F8E9</color>
@@ -188,6 +515,38 @@
     <color name="light_green_A200">#B2FF59</color>
     <color name="light_green_A400">#76FF03</color>
     <color name="light_green_A700">#64DD17</color>
+    <string-array name="material_colors_light_green_names">
+        <item>@color/light_green_50</item>
+        <item>@color/light_green_100</item>
+        <item>@color/light_green_200</item>
+        <item>@color/light_green_300</item>
+        <item>@color/light_green_400</item>
+        <item>@color/light_green_500</item>
+        <item>@color/light_green_600</item>
+        <item>@color/light_green_700</item>
+        <item>@color/light_green_800</item>
+        <item>@color/light_green_900</item>
+        <item>@color/light_green_A100</item>
+        <item>@color/light_green_A200</item>
+        <item>@color/light_green_A400</item>
+        <item>@color/light_green_A700</item>
+    </string-array>
+    <string-array name="material_colors_light_green_values">
+        <item>#F1F8E9</item>
+        <item>#DCEDC8</item>
+        <item>#C5E1A5</item>
+        <item>#AED581</item>
+        <item>#9CCC65</item>
+        <item>#8BC34A</item>
+        <item>#7CB342</item>
+        <item>#689F38</item>
+        <item>#558B2F</item>
+        <item>#33691E</item>
+        <item>#CCFF90</item>
+        <item>#B2FF59</item>
+        <item>#76FF03</item>
+        <item>#64DD17</item>
+    </string-array>
 
     <!-- Lime -->
     <color name="lime_50">#F9FBE7</color>
@@ -204,6 +563,38 @@
     <color name="lime_A200">#EEFF41</color>
     <color name="lime_A400">#C6FF00</color>
     <color name="lime_A700">#AEEA00</color>
+    <string-array name="material_colors_lime_names">
+        <item>@color/lime_50</item>
+        <item>@color/lime_100</item>
+        <item>@color/lime_200</item>
+        <item>@color/lime_300</item>
+        <item>@color/lime_400</item>
+        <item>@color/lime_500</item>
+        <item>@color/lime_600</item>
+        <item>@color/lime_700</item>
+        <item>@color/lime_800</item>
+        <item>@color/lime_900</item>
+        <item>@color/lime_A100</item>
+        <item>@color/lime_A200</item>
+        <item>@color/lime_A400</item>
+        <item>@color/lime_A700</item>
+    </string-array>
+    <string-array name="material_colors_lime_values">
+        <item>#F9FBE7</item>
+        <item>#F0F4C3</item>
+        <item>#E6EE9C</item>
+        <item>#DCE775</item>
+        <item>#D4E157</item>
+        <item>#CDDC39</item>
+        <item>#C0CA33</item>
+        <item>#AFB42B</item>
+        <item>#9E9D24</item>
+        <item>#827717</item>
+        <item>#F4FF81</item>
+        <item>#EEFF41</item>
+        <item>#C6FF00</item>
+        <item>#AEEA00</item>
+    </string-array>
 
     <!-- Yellow -->
     <color name="yellow_50">#FFFDE7</color>
@@ -220,6 +611,38 @@
     <color name="yellow_A200">#FFFF00</color>
     <color name="yellow_A400">#FFEA00</color>
     <color name="yellow_A700">#FFD600</color>
+    <string-array name="material_colors_yellow_names">
+        <item>@color/yellow_50</item>
+        <item>@color/yellow_100</item>
+        <item>@color/yellow_200</item>
+        <item>@color/yellow_300</item>
+        <item>@color/yellow_400</item>
+        <item>@color/yellow_500</item>
+        <item>@color/yellow_600</item>
+        <item>@color/yellow_700</item>
+        <item>@color/yellow_800</item>
+        <item>@color/yellow_900</item>
+        <item>@color/yellow_A100</item>
+        <item>@color/yellow_A200</item>
+        <item>@color/yellow_A400</item>
+        <item>@color/yellow_A700</item>
+    </string-array>
+    <string-array name="material_colors_yellow_values">
+        <item>#FFFDE7</item>
+        <item>#FFF9C4</item>
+        <item>#FFF59D</item>
+        <item>#FFF176</item>
+        <item>#FFEE58</item>
+        <item>#FFEB3B</item>
+        <item>#FDD835</item>
+        <item>#FBC02D</item>
+        <item>#F9A825</item>
+        <item>#F57F17</item>
+        <item>#FFFF8D</item>
+        <item>#FFFF00</item>
+        <item>#FFEA00</item>
+        <item>#FFD600</item>
+    </string-array>
 
     <!-- Amber -->
     <color name="amber_50">#FFF8E1</color>
@@ -236,6 +659,38 @@
     <color name="amber_A200">#FFD740</color>
     <color name="amber_A400">#FFC400</color>
     <color name="amber_A700">#FFAB00</color>
+    <string-array name="material_colors_amber_names">
+        <item>@color/amber_50</item>
+        <item>@color/amber_100</item>
+        <item>@color/amber_200</item>
+        <item>@color/amber_300</item>
+        <item>@color/amber_400</item>
+        <item>@color/amber_500</item>
+        <item>@color/amber_600</item>
+        <item>@color/amber_700</item>
+        <item>@color/amber_800</item>
+        <item>@color/amber_900</item>
+        <item>@color/amber_A100</item>
+        <item>@color/amber_A200</item>
+        <item>@color/amber_A400</item>
+        <item>@color/amber_A700</item>
+    </string-array>
+    <string-array name="material_colors_amber_values">
+        <item>#FFF8E1</item>
+        <item>#FFECB3</item>
+        <item>#FFE082</item>
+        <item>#FFD54F</item>
+        <item>#FFCA28</item>
+        <item>#FFC107</item>
+        <item>#FFB300</item>
+        <item>#FFA000</item>
+        <item>#FF8F00</item>
+        <item>#FF6F00</item>
+        <item>#FFE57F</item>
+        <item>#FFD740</item>
+        <item>#FFC400</item>
+        <item>#FFAB00</item>
+    </string-array>
 
     <!-- Orange -->
     <color name="orange_50">#FFF3E0</color>
@@ -252,6 +707,38 @@
     <color name="orange_A200">#FFAB40</color>
     <color name="orange_A400">#FF9100</color>
     <color name="orange_A700">#FF6D00</color>
+    <string-array name="material_colors_orange_names">
+        <item>@color/orange_50</item>
+        <item>@color/orange_100</item>
+        <item>@color/orange_200</item>
+        <item>@color/orange_300</item>
+        <item>@color/orange_400</item>
+        <item>@color/orange_500</item>
+        <item>@color/orange_600</item>
+        <item>@color/orange_700</item>
+        <item>@color/orange_800</item>
+        <item>@color/orange_900</item>
+        <item>@color/orange_A100</item>
+        <item>@color/orange_A200</item>
+        <item>@color/orange_A400</item>
+        <item>@color/orange_A700</item>
+    </string-array>
+    <string-array name="material_colors_orange_values">
+        <item>#FFF3E0</item>
+        <item>#FFE0B2</item>
+        <item>#FFCC80</item>
+        <item>#FFB74D</item>
+        <item>#FFA726</item>
+        <item>#FF9800</item>
+        <item>#FB8C00</item>
+        <item>#F57C00</item>
+        <item>#EF6C00</item>
+        <item>#E65100</item>
+        <item>#FFD180</item>
+        <item>#FFAB40</item>
+        <item>#FF9100</item>
+        <item>#FF6D00</item>
+    </string-array>
 
     <!-- Deep Orange -->
     <color name="deep_orange_50">#FBE9E7</color>
@@ -268,6 +755,38 @@
     <color name="deep_orange_A200">#FF6E40</color>
     <color name="deep_orange_A400">#FF3D00</color>
     <color name="deep_orange_A700">#DD2C00</color>
+    <string-array name="material_colors_deep_orange_names">
+        <item>@color/deep_orange_50</item>
+        <item>@color/deep_orange_100</item>
+        <item>@color/deep_orange_200</item>
+        <item>@color/deep_orange_300</item>
+        <item>@color/deep_orange_400</item>
+        <item>@color/deep_orange_500</item>
+        <item>@color/deep_orange_600</item>
+        <item>@color/deep_orange_700</item>
+        <item>@color/deep_orange_800</item>
+        <item>@color/deep_orange_900</item>
+        <item>@color/deep_orange_A100</item>
+        <item>@color/deep_orange_A200</item>
+        <item>@color/deep_orange_A400</item>
+        <item>@color/deep_orange_A700</item>
+    </string-array>
+    <string-array name="material_colors_deep_orange_values">
+        <item>#FBE9E7</item>
+        <item>#FFCCBC</item>
+        <item>#FFAB91</item>
+        <item>#FF8A65</item>
+        <item>#FF7043</item>
+        <item>#FF5722</item>
+        <item>#F4511E</item>
+        <item>#E64A19</item>
+        <item>#D84315</item>
+        <item>#BF360C</item>
+        <item>#FF9E80</item>
+        <item>#FF6E40</item>
+        <item>#FF3D00</item>
+        <item>#DD2C00</item>
+    </string-array>
 
     <!-- Grey -->
     <color name="grey_50">#FAFAFA</color>
@@ -280,6 +799,31 @@
     <color name="grey_700">#616161</color>
     <color name="grey_800">#424242</color>
     <color name="grey_900">#212121</color>
+    <string-array name="material_colors_grey_names">
+        <item>@color/grey_50</item>
+        <item>@color/grey_100</item>
+        <item>@color/grey_200</item>
+        <item>@color/grey_300</item>
+        <item>@color/grey_400</item>
+        <item>@color/grey_500</item>
+        <item>@color/grey_600</item>
+        <item>@color/grey_700</item>
+        <item>@color/grey_800</item>
+        <item>@color/grey_900</item>
+    </string-array>
+    <string-array name="material_colors_grey_values">
+        <item>#FAFAFA</item>
+        <item>#F5F5F5</item>
+        <item>#EEEEEE</item>
+        <item>#E0E0E0</item>
+        <item>#BDBDBD</item>
+        <item>#9E9E9E</item>
+        <item>#757575</item>
+        <item>#616161</item>
+        <item>#424242</item>
+        <item>#212121</item>
+
+    </string-array>
 
     <!-- Brown -->
     <color name="brown_50">#EFEBE9</color>
@@ -292,6 +836,30 @@
     <color name="brown_700">#5D4037</color>
     <color name="brown_800">#4E342E</color>
     <color name="brown_900">#3E2723</color>
+    <string-array name="material_colors_brown_names">
+        <item>@color/brown_50</item>
+        <item>@color/brown_100</item>
+        <item>@color/brown_200</item>
+        <item>@color/brown_300</item>
+        <item>@color/brown_400</item>
+        <item>@color/brown_500</item>
+        <item>@color/brown_600</item>
+        <item>@color/brown_700</item>
+        <item>@color/brown_800</item>
+        <item>@color/brown_900</item>
+    </string-array>
+    <string-array name="material_colors_brown_values">
+        <item>#EFEBE9</item>
+        <item>#D7CCC8</item>
+        <item>#BCAAA4</item>
+        <item>#A1887F</item>
+        <item>#8D6E63</item>
+        <item>#795548</item>
+        <item>#6D4C41</item>
+        <item>#5D4037</item>
+        <item>#4E342E</item>
+        <item>#3E2723</item>
+    </string-array>
 
     <!-- Blue Grey -->
     <color name="blue_grey_50">#ECEFF1</color>
@@ -304,7 +872,30 @@
     <color name="blue_grey_700">#455A64</color>
     <color name="blue_grey_800">#37474F</color>
     <color name="blue_grey_900">#263238</color>
-
+    <string-array name="material_colors_blue_grey_names">
+        <item>@color/blue_grey_50</item>
+        <item>@color/blue_grey_100</item>
+        <item>@color/blue_grey_200</item>
+        <item>@color/blue_grey_300</item>
+        <item>@color/blue_grey_400</item>
+        <item>@color/blue_grey_500</item>
+        <item>@color/blue_grey_600</item>
+        <item>@color/blue_grey_700</item>
+        <item>@color/blue_grey_800</item>
+        <item>@color/blue_grey_900</item>
+    </string-array>
+    <string-array name="material_colors_blue_grey_values">
+        <item>#ECEFF1</item>
+        <item>#CFD8DC</item>
+        <item>#B0BEC5</item>
+        <item>#90A4AE</item>
+        <item>#78909C</item>
+        <item>#607D8B</item>
+        <item>#546E7A</item>
+        <item>#455A64</item>
+        <item>#37474F</item>
+        <item>#263238</item>
+    </string-array>
 
 </resources>
 

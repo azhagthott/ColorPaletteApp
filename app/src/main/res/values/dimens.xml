@@ -3,13 +3,15 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="app_bar_height">240dp</dimen>
+    <dimen name="app_bar_height">150dp</dimen>
     <dimen name="text_margin">16dp</dimen>
 
     <!-- TableLayout and TableRow-->
-    <dimen name="color_box_height">100dp</dimen>
-    <dimen name="color_box_width">100dp</dimen>
+    <dimen name="color_box_height">120dp</dimen>
+    <dimen name="color_box_width">120dp</dimen>
     <dimen name="color_box_padding">4dp</dimen>
 
+    <!-- Text size in TableLayout and TableRow-->
+    <dimen name="box_title">12sp</dimen>
 
 </resources>

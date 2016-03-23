@@ -2,10 +2,66 @@
     <string name="app_name">Color Palette</string>
     <string name="action_settings">Settings</string>
 
+    <!-- Color Name-->
+    <string name="red">red</string>
+    <string name="red_title">Red</string>
 
+    <string name="pink">pink</string>
+    <string name="pink_title">Pink</string>
+
+    <string name="purple">purple</string>
+    <string name="purple_title">Purple</string>
+
+    <string name="deep_purple">deep_purple</string>
+    <string name="deep_purple_title">Deep Purple</string>
+
+    <string name="indigo">indigo</string>
+    <string name="indigo_title">Indigo</string>
+
+    <string name="blue">blue</string>
+    <string name="blue_title">Blue</string>
+
+    <string name="light_blue">light_blue</string>
+    <string name="light_blue_title">Light Blue</string>
+
+    <string name="cyan">cyan</string>
+    <string name="cyan_title">Cyan</string>
+
+    <string name="teal">teal</string>
+    <string name="teal_title">Teal</string>
+
+    <string name="green">green</string>
+    <string name="green_title">Green</string>
+
+    <string name="light_green">light_green</string>
+    <string name="light_green_title">Light Green</string>
+
+    <string name="lime">lime</string>
+    <string name="lime_title">Lime</string>
+
+    <string name="yellow">yellow</string>
+    <string name="yellow_title">Yellow</string>
+
+    <string name="amber">amber</string>
+    <string name="amber_title">Amber</string>
+
+    <string name="orange">orange</string>
+    <string name="orange_title">Orange</string>
+
+    <string name="deep_orange">deep_orange</string>
+    <string name="deep_orange_title">Deep Orange</string>
+
+    <string name="grey">grey</string>
+    <string name="grey_title">Grey</string>
+
+    <string name="brown">brown</string>
+    <string name="brown_title">Brown</string>
+
+    <string name="blue_grey">blue_grey</string>
+    <string name="blue_grey_title">Blue Grey</string>
 
     <!-- Deep Purple -->
-    <string name="deep_purple">Deep purple</string>
+    <string name="color_name_deep_purple">deep_purple</string>
     <string name="title_activity_scrolling">#Color selected</string>
 
     <!-- Dummy Color -->
@@ -18,9 +74,7 @@
     <string name="title_activity_main">Color Palette</string>
     <string name="title_activity_detail_scrolling">#ColorSelected</string>
     <string name="large_text">aafsdfasdf</string>
-
-
-
+    <string name="title_activity_detail">DetailActivity</string>
 
 
 </resources>

@@ -1,24 +1,34 @@
 package dev.android.cl.colorpalette.activity;
 
-import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.Gravity;
-import android.view.View;
 import android.widget.TableLayout;
-import android.widget.TableRow;
-import android.widget.TextView;
 
 import dev.android.cl.colorpalette.R;
-import dev.android.cl.colorpalette.color.MaterialColor;
+import dev.android.cl.colorpalette.color.Amber;
+import dev.android.cl.colorpalette.color.Blue;
+import dev.android.cl.colorpalette.color.BlueGrey;
+import dev.android.cl.colorpalette.color.Brown;
+import dev.android.cl.colorpalette.color.Cyan;
+import dev.android.cl.colorpalette.color.DeepOrange;
+import dev.android.cl.colorpalette.color.DeepPurple;
+import dev.android.cl.colorpalette.color.Green;
+import dev.android.cl.colorpalette.color.Grey;
+import dev.android.cl.colorpalette.color.Indigo;
+import dev.android.cl.colorpalette.color.LightBlue;
+import dev.android.cl.colorpalette.color.LightGreen;
+import dev.android.cl.colorpalette.color.Lime;
+import dev.android.cl.colorpalette.color.Orange;
+import dev.android.cl.colorpalette.color.Pink;
+import dev.android.cl.colorpalette.color.Purple;
+import dev.android.cl.colorpalette.color.Red;
+import dev.android.cl.colorpalette.color.Teal;
+import dev.android.cl.colorpalette.color.Yellow;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,58 +39,92 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         final TableLayout tableLayout = (TableLayout) findViewById(R.id.tableLayout);
-        tableLayout.setBackgroundColor(getResources().getColor(R.color.grey_900));
 
-        float colorBoxHeight = getApplication().getResources().getDimension(R.dimen.color_box_height);
-        float colorBoxWidth = getApplication().getResources().getDimension(R.dimen.color_box_width);
-        float colorBoxPadding = getApplication().getResources().getDimension(R.dimen.color_box_padding);
+        /*
+        *
+        * red, pink, purple, deep_purple, indigo, blue, light_blue, cyan,
+        * teal, green, light_green, lime, yellow, amber, orange, deep_orange
+        * grey, brown, blue_grey
+        *
+        */
 
-        int intColorBoxHeight = Math.round(colorBoxHeight);
-        int intColorBoxWidth = Math.round(colorBoxWidth);
-        int intColorBoxPadding = Math.round(colorBoxPadding);
+        Red red = new Red(this);
+        red.setTextViewColor(tableLayout);
+        red.allColorRed(tableLayout);
 
-        String[] allColors = getApplicationContext().getResources().getStringArray(R.array.colors);
-        String[] allColorName = getApplicationContext().getResources().getStringArray(R.array.colors);
+        Pink pink = new Pink(this);
+        pink.setTextViewColor(tableLayout);
+        pink.allColorPink(tableLayout);
 
-        int intColorPosition = 0;
-        for (int i = 0; i <= 83; i++) {
+        Purple purple = new Purple(this);
+        purple.setTextViewColor(tableLayout);
+        purple.allColorPurple(tableLayout);
 
-            final TableRow tableRow = new TableRow(this);
-            tableRow.setLayoutParams(
-                    new TableLayout.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.MATCH_PARENT));
+        DeepPurple deepPurple = new DeepPurple(this);
+        deepPurple.setTextViewColor(tableLayout);
+        deepPurple.allColorDeepPurple(tableLayout);
 
-            for (int j = 1; j <= 3; j++) {
+        Indigo indigo = new Indigo(this);
+        indigo.setTextViewColor(tableLayout);
+        indigo.allColorIndigo(tableLayout);
 
-                final TextView textColorHex = new TextView(this);
-                textColorHex.setText(allColorName[intColorPosition]);
-                textColorHex.setLayoutParams(new TableRow.LayoutParams(intColorBoxWidth, intColorBoxHeight, 1));
-                textColorHex.setPadding(intColorBoxPadding, intColorBoxPadding, intColorBoxPadding, intColorBoxPadding);
-                textColorHex.setGravity(Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL);
-                textColorHex.setBackgroundColor(Color.parseColor(allColors[intColorPosition]));
+        Blue blue = new Blue(this);
+        blue.setTextViewColor(tableLayout);
+        blue.allColorBlue(tableLayout);
 
-                final MaterialColor materialColor = new MaterialColor();
-                materialColor.setName(allColorName[intColorPosition]);
+        LightBlue lightBlue = new LightBlue(this);
+        lightBlue.setTextViewColor(tableLayout);
+        lightBlue.allColorLightBlue(tableLayout);
 
-                textColorHex.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
+        Cyan cyan = new Cyan(this);
+        cyan.setTextViewColor(tableLayout);
+        cyan.allColorCyan(tableLayout);
 
-                        textColorHex.setTranslationZ(-20f);
-                        textColorHex.setBackgroundColor(getResources().getColor(R.color.grey_900));
+        Teal teal = new Teal(this);
+        teal.setTextViewColor(tableLayout);
+        teal.allColorTeal(tableLayout);
 
-                        Log.d(LOG_TAG, "onClick: " + textColorHex.getTranslationZ());
+        Green green = new Green(this);
+        green.setTextViewColor(tableLayout);
+        green.allColorGreen(tableLayout);
 
-                        Intent i = new Intent(MainActivity.this, DetailScrollingActivity.class);
-                        i.putExtra("COLOR_NAME", materialColor.getName());
-                        //startActivity(i);
-                    }
-                });
+        LightGreen lightGreen = new LightGreen(this);
+        lightGreen.setTextViewColor(tableLayout);
+        lightGreen.allColorLightGreen(tableLayout);
 
-                tableRow.addView(textColorHex);
-                intColorPosition++;
-            }
-            tableLayout.addView(tableRow);
-        }
+        Lime lime = new Lime(this);
+        lime.setTextViewColor(tableLayout);
+        lime.allColorLime(tableLayout);
+
+        Yellow yellow = new Yellow(this);
+        yellow.setTextViewColor(tableLayout);
+        yellow.allColorYellow(tableLayout);
+
+        Amber amber = new Amber(this);
+        amber.setTextViewColor(tableLayout);
+        amber.allColorAmber(tableLayout);
+
+        Orange orange = new Orange(this);
+        orange.setTextViewColor(tableLayout);
+        orange.allColorOrange(tableLayout);
+
+        DeepOrange deepOrange = new DeepOrange(this);
+        deepOrange.setTextViewColor(tableLayout);
+        deepOrange.allColorDeepOrange(tableLayout);
+
+        Grey grey = new Grey(this);
+        grey.setTextViewColor(tableLayout);
+        grey.allColorGrey(tableLayout);
+
+        Brown brown = new Brown(this);
+        brown.setTextViewColor(tableLayout);
+        brown.allColorBrown(tableLayout);
+
+        BlueGrey blueGrey = new BlueGrey(this);
+        blueGrey.setTextViewColor(tableLayout);
+        blueGrey.allColorBlueGrey(tableLayout);
+
+        tableLayout.setBackgroundColor(getResources().getColor(R.color.grey_800));
     }
 
     @Override

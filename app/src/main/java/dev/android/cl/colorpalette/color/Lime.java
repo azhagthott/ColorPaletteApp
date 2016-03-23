@@ -1,29 +1,120 @@
 package dev.android.cl.colorpalette.color;
 
-import android.content.res.Resources;
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.Color;
+import android.util.TypedValue;
+import android.view.Gravity;
+import android.view.View;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
 
 import dev.android.cl.colorpalette.R;
+import dev.android.cl.colorpalette.activity.DetailActivity;
+import dev.android.cl.colorpalette.activity.DetailScrollingActivity;
+import dev.android.cl.colorpalette.util.Constant;
 
 /**
  * Created by fran on 15-02-16.
  */
 public class Lime {
 
+    private static final String LOG_TAG = Red.class.getSimpleName();
+
+    private Context context;
+
+    private float colorBoxHeight;
+    private float colorBoxWidth;
+    private float colorBoxPadding;
+
+    private int intColorBoxHeight;
+    private int intColorBoxWidth;
+    private int intColorBoxPadding;
+
     public Lime() {
     }
 
-    public static final String LIME_50 = Resources.getSystem().getResourceName(R.color.lime_50);
-    public static final String LIME_100 = Resources.getSystem().getResourceName(R.color.lime_100);
-    public static final String LIME_200 = Resources.getSystem().getResourceName(R.color.lime_200);
-    public static final String LIME_300 = Resources.getSystem().getResourceName(R.color.lime_300);
-    public static final String LIME_400 = Resources.getSystem().getResourceName(R.color.lime_400);
-    public static final String LIME_500 = Resources.getSystem().getResourceName(R.color.lime_500);
-    public static final String LIME_600 = Resources.getSystem().getResourceName(R.color.lime_600);
-    public static final String LIME_700 = Resources.getSystem().getResourceName(R.color.lime_700);
-    public static final String LIME_800 = Resources.getSystem().getResourceName(R.color.lime_800);
-    public static final String LIME_900 = Resources.getSystem().getResourceName(R.color.lime_900);
-    public static final String LIME_A100 = Resources.getSystem().getResourceName(R.color.lime_A100);
-    public static final String LIME_A200 = Resources.getSystem().getResourceName(R.color.lime_A200);
-    public static final String LIME_A400 = Resources.getSystem().getResourceName(R.color.lime_A400);
-    public static final String LIME_A700 = Resources.getSystem().getResourceName(R.color.lime_A700);
+    public Lime(Context context) {
+        this.context = context;
+    }
+
+    public View allColorLime(View view) {
+        TableLayout tableLayout = (TableLayout) view.findViewById(R.id.tableLayout);
+
+        colorBoxHeight = context.getResources().getDimension(R.dimen.color_box_height);
+        colorBoxWidth = context.getResources().getDimension(R.dimen.color_box_width);
+        colorBoxPadding = context.getResources().getDimension(R.dimen.color_box_padding);
+
+        intColorBoxHeight = Math.round(colorBoxHeight);
+        intColorBoxWidth = Math.round(colorBoxWidth);
+        intColorBoxPadding = Math.round(colorBoxPadding);
+
+        MaterialColor getMaterialColorArray = new MaterialColor();
+        String[] allColor = getMaterialColorArray.getColorsValues(context, context.getResources().getString(R.string.lime));
+
+        int intColorPosition = 0;
+        for (int i = 0; i < allColor.length / 2; i++) {
+
+            final TableRow tableRow = new TableRow(context);
+            tableRow.setLayoutParams(
+                    new TableLayout.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.MATCH_PARENT));
+
+            for (int j = 1; j <= 2; j++) {
+
+                final TextView textColorHex = new TextView(context);
+                textColorHex.setText(allColor[intColorPosition]);
+
+                textColorHex.setLayoutParams(new TableRow.LayoutParams(intColorBoxWidth, intColorBoxHeight, 1));
+                textColorHex.setPadding(intColorBoxPadding, intColorBoxPadding, intColorBoxPadding, intColorBoxPadding);
+                textColorHex.setGravity(Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL);
+                textColorHex.setBackgroundColor(Color.parseColor(allColor[intColorPosition]));
+
+                final MaterialColor materialColor = new MaterialColor();
+                materialColor.setName(allColor[intColorPosition]);
+
+                final int finalIntColorPosition = intColorPosition;
+                textColorHex.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent i = new Intent(context.getApplicationContext(), DetailActivity.class);
+                        i.putExtra("SELECTED_COLOR_NAME", materialColor.getName());
+                        i.putExtra("GROUP_COLOR_NAME", "lime");
+                        i.putExtra("COLOR_POSITION", finalIntColorPosition);
+                        context.startActivity(i);
+                    }
+                });
+
+                tableRow.addView(textColorHex);
+                intColorPosition++;
+            }
+            tableLayout.addView(tableRow);
+        }
+        return tableLayout;
+    }
+
+    public View setTextViewColor(View view) {
+
+        TableLayout tableLayout = (TableLayout) view.findViewById(R.id.tableLayout);
+        colorBoxPadding = context.getResources().getDimension(R.dimen.color_box_padding);
+        intColorBoxPadding = Math.round(colorBoxPadding);
+
+        TextView textView = new TextView(context);
+        textView.setText(R.string.lime_title);
+        textView.setTextColor(context.getResources().getColor(R.color.grey_50));
+        textView.setPadding(intColorBoxPadding * 2, intColorBoxPadding * 2, intColorBoxPadding * 2, intColorBoxPadding * 2);
+        textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, Constant.BOX_TILE_TEXT_SIZE);
+
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                colorBoxHeight = context.getResources().getDimension(R.dimen.color_box_height);
+                Intent i = new Intent(context.getApplicationContext(), DetailActivity.class);
+                i.putExtra("GROUP_COLOR_NAME", "lime");
+                context.startActivity(i);
+            }
+        });
+        tableLayout.addView(textView);
+        return tableLayout;
+    }
 }
